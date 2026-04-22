@@ -20,9 +20,7 @@ module BraveMcp
       end
 
       at_exit do
-        Browser.reset!
-      rescue StandardError
-        # Browser may already be gone -- ignore cleanup errors
+        Browser.shutdown!
       end
 
       server.start

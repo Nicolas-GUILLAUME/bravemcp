@@ -195,7 +195,8 @@ module BraveMcp
 
       def call(name: nil)
         if name
-          BraveMcp::Browser.page.cookies.remove(name: name)
+          url = BraveMcp::Browser.page.url
+          BraveMcp::Browser.page.cookies.remove(name: name, url: url)
         else
           BraveMcp::Browser.page.cookies.clear
         end

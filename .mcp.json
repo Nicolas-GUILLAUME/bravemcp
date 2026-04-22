@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "brave": {
-      "command": "/Users/gaetanjuvin/Project/BraveMCP/bin/brave_mcp"
+      "command": "bin/brave_mcp"
     }
   }
 }
